@@ -15,7 +15,7 @@ void printdir(char *dir, int depth)
         fprintf(stderr,"cannot open directory: %s\n", dir);
         return;
     }
-    chdir(dir);
+    chdir(dir);  
     while((entry = readdir(dp)) != NULL) {
         lstat(entry->d_name,&statbuf);
         if(S_ISDIR(statbuf.st_mode)) {
@@ -23,7 +23,7 @@ void printdir(char *dir, int depth)
             if(strcmp(".",entry->d_name) == 0 || 
                 strcmp("..",entry->d_name) == 0)
                 continue;
-            printf("%*s%s/\n",spaces,"",entry->d_name);
+            printf("%*s%s/ inode:%ld\n",spaces,"",entry->d_name, (long)statbuf.st_ino);
             /* Recurse at a new indent level */
             printdir(entry->d_name,depth+1);
         }
