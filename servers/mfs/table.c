@@ -47,5 +47,9 @@ int (*fs_call_vec[])(void) = {
 		fs_directorywalker, /* 33  */
 		fs_inodebitmapwalker, /* 34  */
 		fs_zonebitmapwalker, /* 35  */
+                fs_damageinodemap,
+                fs_fixinodemap,
+                fs_damagezonemap,
+                fs_fixzonemap,
 };
 

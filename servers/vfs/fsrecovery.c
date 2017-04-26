@@ -34,3 +34,39 @@ int do_zonebitmapwalker(){
 	fs_sendrec(vmnt[i].m_fs_e, &m);
 	return 0;
 }
+
+int do_damageinodemap(){
+	message m;
+	m.m_type = REQ_DAMAGEINODEMAP;
+
+	int i =4;
+	fs_sendrec(vmnt[i].m_fs_e, &m);
+	return 0;
+}
+
+int do_fixinodemap(){
+	message m;
+	m.m_type = REQ_FIXINODEMAP;
+
+	int i =4;
+	fs_sendrec(vmnt[i].m_fs_e, &m);
+	return 0;
+}
+
+int do_damagezonemap(){
+	message m;
+	m.m_type = REQ_DAMAGEZONEMAP;
+
+	int i =4;
+	fs_sendrec(vmnt[i].m_fs_e, &m);
+	return 0;
+}
+
+int do_fixzonemap(){
+	message m;
+	m.m_type = REQ_FIXZONEMAP;
+
+	int i =4;
+	fs_sendrec(vmnt[i].m_fs_e, &m);
+	return 0;
+}

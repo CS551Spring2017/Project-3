@@ -15,7 +15,7 @@ int main() {
 	message m;
 	m.m1_i1 = 2;
 	m.m1_i2 = 2;
-
 	printf("Printing all used zones:\n");
 	_syscall(VFS_PROC_NR, ZONEBITMAPWALKER, &m);
+
 }

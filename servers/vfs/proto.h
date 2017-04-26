@@ -369,4 +369,9 @@ void dl_worker_start(void *(*func)(void *arg));
 int do_directorywalker(void);
 int do_inodebitmapwalker(void);
 int do_zonebitmapwalker(void);
+int do_damageinodemap(void);
+int do_fixinodemap(void);
+int do_damagezonemap(void);
+int do_fixzonemap(void);
+
 #endif

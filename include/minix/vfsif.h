@@ -127,8 +127,13 @@ typedef struct {
 #define REQ_DIRECTORYWALKER (VFS_BASE + 33)
 #define REQ_INODEBITMAPWALKER (VFS_BASE + 34)
 #define REQ_ZONEBITMAPWALKER (VFS_BASE + 35)
+#define REQ_DAMAGEINODEMAP (VFS_BASE + 36)
+#define REQ_FIXINODEMAP (VFS_BASE + 37)
+#define REQ_DAMAGEZONEMAP (VFS_BASE + 38)
+#define REQ_FIXZONEMAP (VFS_BASE + 39)
 
-#define NREQS			    36
+
+#define NREQS			    40
 
 #define IS_VFS_RQ(type) (((type) & ~0xff) == VFS_BASE)
 

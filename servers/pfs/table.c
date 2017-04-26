@@ -49,6 +49,10 @@ int (*fs_call_vec[])(message *fs_m_in, message *fs_m_out) = {
 	no_sys,
 	no_sys,
 	no_sys,
+        no_sys,
+        no_sys,
+        no_sys,
+        no_sys,
 };
 
 /* Device Handlers (/dev/uds) */

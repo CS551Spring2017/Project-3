@@ -44,6 +44,10 @@ int (*call_vec[])(void) = {
 		no_sys, /* 33  */
 		no_sys, /* 34  */
 		no_sys, /* 35  */
+		no_sys, /* 36  */
+		no_sys, /* 37  */
+		no_sys, /* 38  */
+		no_sys, /* 39  */
 };
 
 /* This should not fail with "array size is negative": */

@@ -41,10 +41,15 @@ int truncate_inode(struct inode *rip, off_t len);
 int fs_flush(void);
 int fs_sync(void);
 int fs_new_driver(void);
+
 /* Project 3 - File System Recovery */
 int fs_directorywalker(void);
 int fs_inodebitmapwalker(void);
 int fs_zonebitmapwalker(void);
+int fs_damageinodemap(void);
+int fs_fixinodemap(void);
+int fs_damagezonemap(void);
+int fs_fixzonemap(void);
 
 /* mount.c */
 int fs_mountpoint(void);

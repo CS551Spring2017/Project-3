@@ -94,6 +94,7 @@ int fs_directorywalker(void) {
 	int vnode = fs_m_in.m1_i2;
 	struct inode *n = get_inode(fs_m_in.m1_i3, vnode);
 	
+
 	for (int di = 0; di < depth; di++) printf("  ");
 	printf("Size: %d\n", n->i_size);
 	int i = 0;
@@ -176,6 +177,8 @@ int fs_inodebitmapwalker(void) {
 		put_block(bp, MAP_BLOCK);
 	}
 	printf("\n");
+	printf("%d\n",limit);
+	printf("\n");
 	return 0;
 }
 
@@ -212,3 +215,44 @@ int fs_zonebitmapwalker(void) {
 	printf("\n");
 	return 0;
 }
+
+/*===========================================================================*
+ *				fs_damageinodemap				     *
+ *===========================================================================*/
+
+
+int fs_damageinodemap(void){
+	printf("DAMAGE INODE MAP\n");
+	return 0;
+}
+
+/*===========================================================================*
+ *				fs_fixinodemap				     *
+ *===========================================================================*/
+
+int fs_fixinodemap(void){
+	printf("FIX INODE MAP\n");
+	return 0;
+}
+
+/*===========================================================================*
+ *				fs_damagezonemap				     *
+ *===========================================================================*/
+
+int fs_damagezonemap(void){
+	printf("DAMAGE ZONE MAP\n");
+	return 0;
+}
+
+/*===========================================================================*
+ *				fs_fixzonemap				     *
+ *===========================================================================*/
+
+ int fs_fixzonemap(void){
+ 	printf("FIX ZONE MAP\n");
+	return 0;
+ }
+
+
+
+

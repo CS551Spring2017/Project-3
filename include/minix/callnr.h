@@ -76,6 +76,7 @@
 #define REBOOT		  76
 #define SVRCTL		  77
 #define SYSUNAME	  78
+#define DAMAGEINODEMAP	79
 #define GETDENTS	  80	/* to VFS */
 #define LLSEEK		  81	/* to VFS */
 #define FSTATFS	 	  82	/* to VFS */
@@ -93,6 +94,7 @@
 #define FTRUNCATE	  94	/* to VFS */
 #define FCHMOD		  95	/* to VFS */
 #define FCHOWN		  96	/* to VFS */
+#define FIXZONEMAP		97
 #define SPROF             98    /* to PM */
 #define CPROF             99    /* to PM */
 
@@ -100,7 +102,9 @@
 #define PM_NEWEXEC	100	/* from VFS or RS to PM: new exec */
 #define SRV_FORK  	101	/* to PM: special fork call for RS */
 #define EXEC_RESTART	102	/* to PM: final part of exec for RS */
+#define DAMAGEZONEMAP	103
 #define GETPROCNR	104	/* to PM */
+#define FIXINODEMAP		105
 #define ISSETUGID	106	/* to PM: ask if process is tainted */
 #define GETEPINFO_O	107	/* to PM: get pid/uid/gid of an endpoint */
 
