@@ -1,7 +1,9 @@
 Project 3 - Group 2
 ===================
 Sufyan Menk
+<br/>
 John Paul Aldana
+<br/>
 Randal Kwok
 
 ----------
