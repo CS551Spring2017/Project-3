@@ -109,7 +109,7 @@ int main(int argc, char *argv[]){
 				printf("Number of files = %d\n", size);
 			}
 			else {
-				printf("%s is not a a directory.\n", path);
+				printf("%s is not a directory.\n", path);
 			}
 		}
 		else {
