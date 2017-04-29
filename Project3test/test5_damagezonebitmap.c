@@ -11,10 +11,16 @@
 #include <dirent.h>
 #include <string.h>
 
-int main() {
-	message m;
+int main(int argc, char *argv[]){
 	
-	printf("Damaging Inode Map:\n");
-	_syscall(VFS_PROC_NR, DAMAGEINODEMAP, &m);
-
+	if (argc == 1) {
+		printf("Enter an inode number as an argument.\n");
+	}
+	else {
+		message m;
+		m.m1_i1 = atoi(argv[1]);
+		
+		printf("Damaging Zone Map:\n");
+		_syscall(VFS_PROC_NR, DAMAGEZONEMAP, &m);
+	}
 }
