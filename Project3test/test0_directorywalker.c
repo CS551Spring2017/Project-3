@@ -13,7 +13,7 @@
 
 void directoryWalker(char* path, int *size, int depth);
 int isDir(char *s);
-void testIndent(int depth);
+void textIndent(int depth);
 
 int isDir(char *s) {
 	struct stat s_path;

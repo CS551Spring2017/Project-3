@@ -386,7 +386,7 @@ int fs_damagezonemap(void){
 		k |= mask;
 		b_bitmap(bp)[word] = (bitchunk_t) conv4(sp->s_native, (int) k);
 		MARKDIRTY(bp);
-		printf("Flipped zone bit %d from 0 to 01.\n", i);
+		printf("Flipped zone bit %d from 0 to 1.\n", i);
 	}
 	
 	put_block(bp, MAP_BLOCK);
